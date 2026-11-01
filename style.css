@@ -85,8 +85,16 @@ a.cta, button.cta{
     border-radius: 10px;
     text-decoration: none;
     box-shadow: 0 0 0 10px rgba(0,127,255,.15);
+    outline: none;
+    border: none;
+    cursor: pointer;
 
 }
+a.cta:active, 
+button.cta:active{
+    opacity: .7;
+}
+
 a.cta.alt, button.cta.alt{
     background-color: #FFD400;
     color: #111;
@@ -99,6 +107,7 @@ nav{
     box-shadow: 0 5x 8px rgba(0, 0, 0,.2);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 nav .logo{
     display: block;
@@ -150,4 +159,77 @@ nav ul li a{
     line-height: 50px;
     font-weight: 800px;
 }
+.sep{
+    width: 470px;
+    height: 10px;
+    background-color: #111;
+    margin: 70px auto;
+}
+.story h3{
+    font-size: 40px;
+}
+.nb-list{
+    width: 470px;
+    padding: 20px 20px 0 20px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+}
+.nb-list li{
+    height: 70px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    box-sizing: border-box;
+}
+.nb-list li.red{background-color:#FF3300;}
+.nb-list li.blue{background-color:#007FFF;}
+.nb-list li.gray{background-color:#d9d9d9;}
+.nb-list li.yellow{
+    background-color: #FFD400;
+    color: #111;
+}
+.nb-list li.pink{background-color:#FFADF9;}
+.nb-list li.salmon{background-color:#FA8072;}
+.the-gang-img{
+    display: block;
+    margin: 0 auto;
+}
+.nb-list li.dragging{
+   position: absolute;
+   top: 70px;
+   left: 70px;
+   right: -30px;
+   transform: rotate(6deg);
+   box-shadow: 0 2px 14px rgba(0,0,0,.3);
 
+} 
+.nb-list li.dragging:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 54px;
+    height: 50px;
+    background: url(img/giving.png) no-repeat 0 0;
+    background-size: 100%;
+    bottom: -0px;
+    left: 60%;
+}
+footer{
+    text-align: center;
+    color: rgba(0,0,0 .4);
+    font-size: 20px;
+    margin: 85px 0 45px;
+    font-weight: bold;
+}
+footer a{
+    color: rgba(0,0,0 .4);
+}
+.popup{
+    display: none;
+}
